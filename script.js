@@ -22,10 +22,49 @@
 // ESERCIZIO 12: Scrivi una funzione per cambiare il colore del prezzo di ogni prodotto in uno differente, ogni volta che viene invocata
 
 
-const title = document.getElementByClassName("title")
+
    
 function changeTitle() {
-   title.innerText = "THIS IS SMART ISLAND";
+   const h1 = document.querySelector("h1")
+    h1.innerText = "THIS IS SMART ISLAND";
    
 }
-changeTitle(title)
+changeTitle();
+
+function changeBackgroundColor() {
+    const body = document.querySelector("body")
+    body.style.backgroundColor = red;
+   
+
+}
+changeBackgroundColor();
+
+function changeAddress(){
+    const address = document.getElementById("address")
+    address.innerText = "Via Alemanno 62, Negrar di Valpolicella (PD)"
+}
+changeAddress();
+
+
+
+function addLinkClass () {
+    const link = document.getElementsByClassName("link")
+    for(let i = 0; i < link.length; i++) {
+    link = link[i].classList.add("link-class")
+    } return link
+    
+
+}
+addLinkClass(link);
+
+
+function addRemoveClassImg() {
+const img = document.querySelectorAll("img");
+console.log(img)
+for(let i = 0; i < img.length; i++) {
+    img[i].classList.add("imgclass1")
+    img[i].classList.remove("img")
+}
+} addRemoveClassImg()
+
+
